@@ -114,7 +114,12 @@ img{
     display: none;
   }
 } */
-
+.stars{
+  color: #EDBB0E;
+}
+.stars i:last-child{
+  color: #707070;
+}
 /*========== CLASS CSS ==========*/
 .section{
   padding: 4rem 0 2rem;
