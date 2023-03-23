@@ -353,7 +353,9 @@ img{
 }
 
 .menu__img{
-  width: 100px;
+  width: 100%;
+  /* height: 10rem; */
+  object-fit: cover;
   align-self: center;
   margin-bottom: var(--mb-2);
 }
