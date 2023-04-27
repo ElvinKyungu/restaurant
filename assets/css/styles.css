@@ -70,15 +70,10 @@ body.dark-theme{
   --container-color: #27302C;
 }
 
+
+
 /*========== Button Dark/Light ==========*/
-.change-theme{
-  position: absolute;
-  right: 1rem;
-  top: 1.8rem;
-  color: var(--text-color);
-  font-size: 1rem;
-  cursor: pointer;
-}
+
 
 body{
   margin: var(--header-height) 0 0 0;
@@ -106,14 +101,20 @@ img{
   max-width: 100%;
   height: auto;
 }
-/* .hide_mobile{
-  display: block;
+
+.animate-marquee {
+  animation: slide 20s linear infinite;
 }
-@media screen and (max-width: 768px){
-  .hide_mobile{
-    display: none;
+@keyframes slide {
+  0% {
+      transform: translate(0)
   }
-} */
+
+  to {
+      transform: translate(-100%)
+  }
+}
+
 .stars{
   color: #EDBB0E;
 }
@@ -329,6 +330,8 @@ img{
   height: 64px;
   fill: var(--first-color);
   margin-bottom: var(--mb-2);
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 .services__title{
@@ -343,7 +346,7 @@ img{
 
 /*========== MENU ==========*/
 .menu__container{
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   justify-content: center;
 }
 
@@ -429,8 +432,10 @@ img{
 
 /*========== FOOTER ==========*/
 .footer__container{
+  padding-top: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
+  border-top: 1px solid #e4dede;
 }
 
 .footer__logo{
